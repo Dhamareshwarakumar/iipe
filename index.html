@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Recruitment | IIPE</title>
+
+    <!-- Bootsrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="basic-tab" data-bs-toggle="tab" data-bs-target="#basic"
+                    type="button" role="tab">Basic</button>
+                <button class="nav-link" id="personal-information-tab" data-bs-toggle="tab"
+                    data-bs-target="#personal-information" type="button" role="tab">Personal Information</button>
+                <button class="nav-link" id="academic-information-tab" data-bs-toggle="tab"
+                    data-bs-target="#academic-information" type="button" role="tab">Academic Information</button>
+                <button class="nav-link" id="academic-experience-tab" data-bs-toggle="tab"
+                    data-bs-target="#academic-experience" type="button" role="tab">Academic Experience</button>
+                <button class="nav-link" id="research-experience-tab" data-bs-toggle="tab"
+                    data-bs-target="#research-experience" type="button" role="tab">Research Experience</button>
+                <button class="nav-link" id="present-position-tab" data-bs-toggle="tab"
+                    data-bs-target="#present-position" type="button" role="tab">Present Position</button>
+                <button class="nav-link" id="research-contribution-tab" data-bs-toggle="tab"
+                    data-bs-target="#research-contribution" type="button" role="tab">Research Contribution</button>
+                <button class="nav-link" id="publications-tab" data-bs-toggle="tab" data-bs-target="#publications"
+                    type="button" role="tab">Publications</button>
+                <button class="nav-link" id="iipe-experience-tab" data-bs-toggle="tab" data-bs-target="#iipe-experience"
+                    type="button" role="tab">IIPE Experience</button>
+                <button class="nav-link" id="contact-information-tab" data-bs-toggle="tab"
+                    data-bs-target="#contact-information" type="button" role="tab">Contact Information</button>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <section id="basic"></section>
+            <section class="tab-pane" role="tabpanel" id="personal-information">
+                <table>
+                    <tr>
+                        <td bgcolor="#ddd">
+                            <font style="font-family: Verdana; width:100%; color:blue; ">
+                                <h3>PERSONAL INFORMATION</h3>
+                            </font>
+                        </td>
+
+                    </tr>
+                    <tr border="1" class="hdrow">
+
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Title <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td><select id="title" name="title">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option>Dr.</option>
+                                <option>Mr.</option>
+                                <option>Mrs.</option>
+                                <option>Ms.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Name of the Applicant <font color=red>*</font>
+                            </font>
+                        <td><input type="text" id="cname" name="cname" value="SOMESH" required="true"
+                                readonly="readonly"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Email Id <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td> <input type="email" id="emailid" name="emailid" value="somesh.cs@iipe.ac.in"
+                                required="true" readonly="readonly"> </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Mobile No: <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td> <input type="text" class="numericOnly" id="mobno" name="mobno" value=""
+                                placeholder="Mobile Number" required="true"> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Date of Birth <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td colspan="6"> <input type="date" id="dob" name="dob" placeholder="DOB" max="2010-12-31"
+                                min="1948-01-01" required="true"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;"> Nationality <font color=red>*</font>
+                            </font>
+                        <td><input type="text" id="natn" name="natn" placeholder="Nationality" required="true"></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Father's/Guardian's Name <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td> <input type="text" id="ufname" name="ufname" placeholder="Father's/Guardian's Name"
+                                required="true"> </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Father's/Guardian's Occupation
+                            </font>
+                            <!-- <font style="font-family: Verdana; "><i><font color=green><br>(If not known, please enter NOT APPLICABLE)</font></i>
+                            </font>-->
+                        </td>
+
+                        <td> <input type="text" id="ufocc" name="ufocc" placeholder="Father's/Guardian's Occupation">
+                        </td>
+
+                    </tr>
+
+
+                    <!-- TS RECRUITMENT--V2-- START-->
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Mother's Name <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td> <input type="text" id="umname" name="umname" placeholder="Mother's Name" required="true">
+                        </td>
+                    </tr><br>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Mother's Occupation
+                            </font>
+                            <!-- <font style="font-family: Verdana; "><i><font color=green><br>(If not known, please enter NOT APPLICABLE)</font></i>
+                            </font>-->
+                        </td>
+
+                        <td> <input type="text" id="umocc" name="umocc" placeholder="Mother's Occupation"> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><br></td>
+                    </tr>
+                    <!-- TS RECRUITMENT--V2-- END-->
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;"> Complete Postal Address (Present) <font color=red>*
+                                </font>
+                            </font>
+
+                        <td colspan="3">
+                            <input type="text" id="cadr" name="cadr" placeholder="Present Address" class="ad"
+                                required="true"><br>
+                            <select name="cast" id="cast" class="ad" style="margin-top: 4px;">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select><br>
+                            <input type="text" id="capin" name="capin" class="ad numericOnly" placeholder="PIN"
+                                style="margin-top: 4px;" required="true">
+                        </td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <br>
+                            <div class="form-group">
+                                <input type="checkbox" id="check-address">
+                                <font style="font-family: Verdana;">Same as Present Address</font>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Complete Postal Address (Permanent) <font color=red>*
+                                </font>
+                            </font>
+                        <td colspan="3">
+                            <input type="text" id="padr" name="padr" class="ad" placeholder="Permanent Address"
+                                required="true"><br>
+                            <select name="past" id="past" class="ad" style="margin-top: 4px;">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                                <option value="Daman and Diu">Daman and Diu</option>
+                                <option value="Delhi">Delhi</option>
+                                <option value="Lakshadweep">Lakshadweep</option>
+                                <option value="Puducherry">Puducherry</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                            </select><br>
+                            <input type="text" id="papin" name="papin" class="ad numericOnly" placeholder="PIN"
+                                style="margin-top: 4px;" required="true">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                    </tr><br>
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Gender <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td><select id="gender" name="gender">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                                <option>OTHERS</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Marital Status</font>
+                        </td>
+                        <td><select id="marriage" name="marriage">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option>SINGLE</option>
+                                <option>MARRIED</option>
+                                <option>WIDOWED</option>
+                                <option>SEPARATED</option>
+                                <option>DIVORCED</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;">Specially Abled <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td><select id="disabled" name="disabled">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option>YES</option>
+                                <option>NO</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <font style="font-family: Verdana;"> Category <font color=red>*</font>
+                            </font>
+                        </td>
+                        <td><select id="cat" name="cat">
+                                <option>-------------SELECT---------------</option>
+                                <!-- Dont Change any number of -- in this line-->
+                                <option>GEN</option>
+                                <option>OBC(NCL)</option>
+                                <option>SC</option>
+                                <option>ST</option>
+                                <option>EWS</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section class="tab-pane" role="tabpanel" id="academic-information">
+                <h2>Teaching Experience</h2>
+
+                <h2>Course(s) Taught</h2>
+            </section>
+            <section class="tab-pane" role="tabpanel" id="academic-experience">
+                <button onclick="addAcademicExperience()" class="btn btn-primary">Add Experience</button>
+
+                <div id="list" class="border container-fluid">
+                    Academic Experience
+                </div>
+            </section>
+            <section class="tab-pane" role="tabpanel" id="research-experience">
+                Research Experience
+            </section>
+            <!-- <section class="tab-pane" role="tabpanel" id="consulting-experience"></section> -->
+            <!-- <section class="tab-pane" role="tabpanel" id="industrial-experience"></section> -->
+            <!-- <section class="tab-pane" role="tabpanel" id="administrative-experinece"></section> -->
+            <section class="tab-pane" role="tabpanel" id="present-position">Present Position</section>
+            <section class="tab-pane" role="tabpanel" id="research-contribution">Research Contribution</section>
+            <section class="tab-pane" role="tabpanel" id="publications">Publications</section>
+            <section class="tab-pane" role="tabpanel" id="iipe-experience">IIPE Experience</section>
+            <!-- <section class="tab-pane" role="tabpanel" id="awards"></section> -->
+            <!-- <section class="tab-pane" role="tabpanel" id="teaching-plan"></section> -->
+            <!-- <section class="tab-pane" role="tabpanel" id="research-plan"></section>  -->
+            <section class="tab-pane" role="tabpanel" id="contact-information">Contact Information</section>
+        </div>
+    </main>
+
+    <script src="./faculty_recruitment.js"></script>
+</body>
+
+</html>

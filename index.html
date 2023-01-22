@@ -20,6 +20,10 @@
             padding: 0;
             box-sizing: border-box;
         }
+
+        body {
+            background-color: #F6FAFF;
+        }
     </style>
 </head>
 
@@ -355,10 +359,31 @@
                 <h2>Course(s) Taught</h2>
             </section>
             <section class="tab-pane" role="tabpanel" id="academic-experience">
-                <button onclick="addAcademicExperience()" class="btn btn-primary">Add Experience</button>
+                <div id="teaching-experience" class="card my-3 mx-5 p-3">
+                    <div class="card-body">
+                        <h2 class="text-center"><span class="text-primary">Teaching</span> Experience</h2>
+                        <div id="list" class="container-fluid">
+                            Academic Experience
+                        </div>
+                        <div class="mt-3 mx-5 d-flex justify-content-center">
+                            <button onclick="addAcademicExperience()" class="btn btn-primary mx-3">Add
+                                Experience</button>
+                            <button onclick="saveAcademicExperience()" class="btn btn-success mx-3">Save</button>
+                        </div>
+                    </div>
+                </div>
 
-                <div id="list" class="border container-fluid">
-                    Academic Experience
+                <div id="courses-taught" class="card my-3 mx-5 p-3">
+                    <div class="card-body">
+                        <h2 class="text-center"><span class="text-primary">Courses</span> Taught</h2>
+                        <div id="list" class="container-fluid">
+                            Courses Taught
+                        </div>
+                        <div class="mt-3 mx-5 d-flex justify-content-center">
+                            <button onclick="addCoursesTaught()" class="btn btn-primary mx-3">Add Courses</button>
+                            <button onclick="saveCoursesTaught()" class="btn btn-success mx-3">Save</button>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section class="tab-pane" role="tabpanel" id="research-experience">

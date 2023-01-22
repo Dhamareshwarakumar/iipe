@@ -1,0 +1,12 @@
+POST http://localhost:5555/services/post_faculty_academic_experience.php
+Content-Type: application/json
+
+[
+    {
+        "organization": "GMRIT",
+        "type_of_organization": "Private",
+        "designation": "Asst Professor",
+        "from": "2023-01-01",
+        "to": "2023-01-10"
+    }
+]
